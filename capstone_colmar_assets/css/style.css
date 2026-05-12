@@ -13,7 +13,7 @@ header {
     position: fixed;
     z-index: 100;
     width: 100%;
-    background-color: rgba(19, 104, 110, 0.151);
+    background-color: rgba(219, 220, 207, 0.151);
 }
 
 header .HeaderBar {
@@ -53,4 +53,51 @@ header .HeaderBar nav ul {
     color: rgb(83, 80, 80);
     font-size: 1em;
     list-style: none;
+}
+
+/*2nd Section*/
+header .ClickBait {
+    background-color: rgb(194, 194, 188);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+header .ClickBait #studygroup {
+    width: 60%;
+    height: auto;
+    padding: 2em 1.5em;
+}
+
+header .ClickBait .Catchphrase {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 1.5em;
+}
+
+header .ClickBait .Catchphrase h2 {
+    color: rgb(64, 60, 60);
+    font-size: 2em;
+}
+
+header .ClickBait .Catchphrase h4 {
+    color: rgb(64, 60, 60);
+    font-size: 1.5em;
+    font-weight: lighter;
+}
+
+header .ClickBait .Catchphrase .StartHere {
+    background-color: rgb(64, 60, 60);
+    width: 75%;
+    height: auto;
+}
+
+header .ClickBait .Catchphrase .StartHere h4 {
+    color: rgb(240, 237, 237);
+    font-size: 1.2em;
+    text-align: center;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
 }
