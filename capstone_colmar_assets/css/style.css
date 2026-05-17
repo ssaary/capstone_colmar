@@ -56,20 +56,22 @@ header .HeaderBar nav ul {
 }
 
 /*2nd Section*/
-header .ClickBait {
+.ClickBait {
+    position: relative;
+    top: 4em;
     background-color: rgb(194, 194, 188);
     display: flex;
     justify-content: flex-start;
     align-items: center;
 }
 
-header .ClickBait #studygroup {
+.ClickBait #studygroup {
     width: 60%;
     height: auto;
     padding: 2em 1.5em;
 }
 
-header .ClickBait .Catchphrase {
+.ClickBait .Catchphrase {
     display: flex;
     flex-flow: column;
     justify-content: flex-start;
@@ -77,27 +79,101 @@ header .ClickBait .Catchphrase {
     margin-left: 1.5em;
 }
 
-header .ClickBait .Catchphrase h2 {
+.ClickBait .Catchphrase h2 {
     color: rgb(64, 60, 60);
     font-size: 2em;
 }
 
-header .ClickBait .Catchphrase h4 {
+.ClickBait .Catchphrase h4 {
     color: rgb(64, 60, 60);
     font-size: 1.5em;
     font-weight: lighter;
 }
 
-header .ClickBait .Catchphrase .StartHere {
+.ClickBait .Catchphrase .StartHere {
     background-color: rgb(64, 60, 60);
     width: 75%;
     height: auto;
 }
 
-header .ClickBait .Catchphrase .StartHere h4 {
+.ClickBait .Catchphrase .StartHere h4 {
     color: rgb(240, 237, 237);
     font-size: 1.2em;
     text-align: center;
     padding-top: 0.5em;
     padding-bottom: 0.5em;
+}
+/*Informantions*/
+.Informations {
+    position: relative;
+    top: 4em;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Informations .InformationsBait {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 2em 1.5em;
+}
+
+.Informations .InformationsBait #ReadingGuy {
+    width: 100%; /*need to resize*/
+    height: auto;
+}
+
+.Informations .InformationsBait h2 {
+    color: rgb(64, 60, 60);
+    font-size: 2em;
+}
+
+.Informations .InformationsBait h4 {
+    color: rgb(64, 60, 60);
+    font-size: 1.0em;
+    font-weight: lighter;
+}
+
+.Informations .InformationsBait h5 {
+    color: rgb(64, 60, 60);
+    font-size: 0.7em;
+    font-weight: lighter;
+}
+
+.Informations .EssentialInformations .BoxIt {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Informations .EssentialInformations .BoxIt #EssentialImg {
+    width: 35%;
+    height: auto;
+    padding: 2em 1.5em;
+}
+
+.Informations .EssentialInformations .BoxIt .Align {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 0;
+}
+
+.Informations .EssentialInformations .BoxIt h3 {
+    color: rgb(64, 60, 60);
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+.Informations .EssentialInformations .BoxIt h4 {
+    color: rgb(64, 60, 60);
+    font-size: 0.8em;
+    font-weight: lighter;
+}
+
+.Informations .EssentialInformations .BoxIt h4 .toBlueOut {
+    color: rgb(17, 141, 194);
 }
