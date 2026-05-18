@@ -231,3 +231,104 @@ header .HeaderBar nav ul {
     font-weight: lighter;
     padding-left: 1em;
 }
+/*Thesis*/
+.Thesis {
+    position: relative;
+    margin-top: 2em;
+    margin-bottom: 2em;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.Thesis p {
+    color: rgb(64, 60, 60);
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.Thesis .ThesisDescp {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.Thesis .ThesisDescp .VidFeat {
+    display: flex;
+    flex-flow:column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.Thesis .ThesisDescp .VidFeat h3 {
+    color: rgb(64, 60, 60);
+    font-size: 1.3em;
+    font-weight: 550;
+    padding-left: 1.5em;
+}
+
+.Thesis .ThesisDescp .VidFeat h4 {
+    color: rgb(64, 60, 60);
+    font-size: 0.8em;
+    font-weight: 500;
+    padding-left: 1.5em;
+}
+
+.Thesis .ThesisDescp .VidFeat #vClip {
+    padding: 1.5em;
+}
+
+.Thesis .ThesisDescp .ResearchFeat {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Thesis .ThesisDescp .ResearchFeat .ResearchBoxIt {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.Thesis .ThesisDescp .ResearchFeat .ResearchBoxIt #ReasImg {
+    width: 35%;
+    height: auto;
+    padding: 1em;
+}
+
+.Thesis .ThesisDescp .ResearchFeat .ResearchBoxIt .ReasDescp {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.Thesis .ThesisDescp .ResearchFeat .ResearchBoxIt .ReasDescp h3 {
+    color: rgb(64, 60, 60);
+    font-size: 1.3em;
+    font-weight: 600;    
+}
+
+.Thesis .ThesisDescp .ResearchFeat .ResearchBoxIt .ReasDescp h4 {
+    color: rgb(64, 60, 60);
+    font-size: 1em;
+    font-weight: 400;    
+}
+/*footer*/
+footer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    padding: 1em 1.5em;
+}
+
+footer > :first-child{
+    justify-self: flex-start; /*fix this*/
+}
+
+footer h5 {
+    color: rgb(64, 60, 60);
+    font-size: 1em;
+    font-weight: 400;  
+}
