@@ -50,11 +50,40 @@ header .HeaderBar nav ul {
     justify-content: flex-end;
     align-items: center;
     gap: 1em;
-    color: rgb(83, 80, 80);
-    font-size: 1em;
     list-style: none;
 }
 
+header .HeaderBar nav a {
+    color: rgb(83, 80, 80);
+    font-size: 1em;
+    text-decoration: none;
+}
+
+header .mobile {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    header .desktop {
+        display: none;
+    }
+
+    header .HeaderBar h4 {
+        display: none;
+    }
+    
+    header .mobile {
+        display: block;
+        width: 100%;
+    }
+    
+    header .mobile ul {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+}
 /*2nd Section*/
 .ClickBait {
     position: relative;
@@ -103,6 +132,32 @@ header .HeaderBar nav ul {
     padding-top: 0.5em;
     padding-bottom: 0.5em;
 }
+
+@media only screen and (max-width: 600px) {
+    .ClickBait {
+        display: inline;
+    }
+
+    .ClickBait #studygroup {
+        width: 100;
+    }
+
+    .ClickBait .Catchphrase {
+        font-size: 0.8em;
+    }
+
+    .ClickBait .Catchphrase .StartHere {
+        background-color: rgb(145, 141, 141);
+        width: 100;
+        height: auto;
+    }
+
+    .ClickBait .Catchphrase .StartHere h4  {
+        color: rgb(252, 249, 249);
+        font-weight: bold;
+    }
+}
+
 /*Informantions*/
 .Informations {
     position: relative;
@@ -178,6 +233,27 @@ header .HeaderBar nav ul {
 .Informations .EssentialInformations .BoxIt h4 .toBlueOut {
     color: rgb(17, 141, 194);
 }
+
+@media only screen and (max-width: 600px) {
+    .Informations .InformationsBait {
+        display: none;
+        padding: 2em;
+    }
+
+    .Informations .EssentialInformations .BoxIt {
+        display: inline;
+    }
+
+    .Informations .EssentialInformations .BoxIt .Align {
+        display: inline;
+    }
+
+    .Informations .EssentialInformations .BoxIt #EssentialImg {
+        width: 75%;
+        height: auto;
+    }
+}
+
 /*Courses*/
 .Courses {
     position: relative;
@@ -231,6 +307,25 @@ header .HeaderBar nav ul {
     font-weight: lighter;
     padding-left: 1em;
 }
+
+@media only screen and (max-width: 600px) {
+    .Courses {
+        background-color: white;
+    }
+
+    .Courses .CourseSelection .CourseBox {
+        background-color: rgb(194, 194, 188);
+    }
+
+    .Courses .CourseSelection .CourseBox #CourseImg {
+        display: none;
+    }
+
+    .Courses .CourseSelection .CourseBox h5 {
+        display: none;
+    }
+}
+
 /*Thesis*/
 .Thesis {
     position: relative;
@@ -315,6 +410,20 @@ header .HeaderBar nav ul {
     font-size: 1em;
     font-weight: 400;    
 }
+
+@media only screen and (max-width: 600px) {
+    .Thesis .ThesisDescp .VidFeat h3 {
+        display: none;
+    }
+
+    .Thesis .ThesisDescp .VidFeat h4 {
+        display: none;
+    }
+
+    .Thesis .ThesisDescp .ResearchFeat {
+        display: none;
+    }
+}
 /*footer*/
 footer {
     padding: 1em 1.5em;
@@ -333,16 +442,12 @@ footer .copyright{
     flex-grow: 1; /*set one item to the left*/
 }
 
-@media only screen and (max-width: 400px) {
-    footer .terms {
+@media only screen and (max-width: 600px) {
+    footer .content .terms {
         display: none;
     }
 
-    footer .privacy {
+    footer .content .privacy {
         display: none;
-    }
-
-    footer .copyright {
-        font-size: .65em;
     }
 }
