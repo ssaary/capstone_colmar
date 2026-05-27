@@ -325,13 +325,24 @@ footer .content {
     justify-content: flex-end;
     align-items: flex-end;
     gap: 1em;
-}
-footer .copyright{  
-    flex-grow: 1;
-}
-
-footer h5 {
     color: rgb(64, 60, 60);
     font-size: 1em;
-    font-weight: 400;  
+    font-weight: 400; 
+}
+footer .copyright{  
+    flex-grow: 1; /*set one item to the left*/
+}
+
+@media only screen and (max-width: 400px) {
+    footer .terms {
+        display: none;
+    }
+
+    footer .privacy {
+        display: none;
+    }
+
+    footer .copyright {
+        font-size: .65em;
+    }
 }
