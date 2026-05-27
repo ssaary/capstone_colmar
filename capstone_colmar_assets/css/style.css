@@ -317,14 +317,17 @@ header .HeaderBar nav ul {
 }
 /*footer*/
 footer {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
     padding: 1em 1.5em;
 }
 
-footer > :first-child{
-    justify-self: flex-start; /*fix this*/
+footer .content {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 1em;
+}
+footer .copyright{  
+    flex-grow: 1;
 }
 
 footer h5 {
